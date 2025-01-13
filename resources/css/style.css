@@ -6,6 +6,14 @@
     min-height: 95vh;
 }
 
+.bg-contact{
+    background-image: url(../../public/musica.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 500px;
+    margin-top: 60px; */
+}
+
 .title-custom{
     color: whitesmoke;
     font-weight: 500;
@@ -14,6 +22,10 @@
 
 .title-height{
     height: 30vh;
+}
+
+.shadow-bg{
+    background: rgba(0, 0, 0, 0.41);
 }
 
 .height-custom{

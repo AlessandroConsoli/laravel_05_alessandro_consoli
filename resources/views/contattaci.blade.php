@@ -2,9 +2,9 @@
     
     <div class="container-fluid">
         <div class="row height-custom justify-content-center align-items-center">
-            <div class="col-12">
+            <div class="col-12 bg-contact">
                 <h1 class="text-center display-4 title-custom title-height title">
-                    Contattaci!
+                    <span class="shadow-bg">Contattaci!</span>
                 </h1>
             </div>
         </div>
