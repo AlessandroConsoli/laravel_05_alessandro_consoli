@@ -1,0 +1,27 @@
+.bg-custom{
+    background-image: url(../../public/jazz.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 95vh;
+}
+
+.title-custom{
+    color: whitesmoke;
+    font-weight: 500;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.title-height{
+    height: 30vh;
+}
+
+.height-custom{
+    height: 50vh;
+}
+
+.box-bg{
+    background: rgba(117, 132, 153, 0.514);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.534);
+    backdrop-filter: blur(13px);
+}
