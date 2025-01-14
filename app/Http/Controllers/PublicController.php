@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\AdminMail;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -23,7 +24,11 @@ class PublicController extends Controller
             'description' => $request->input('description'),
         ];
 
-        Mail::to('noreply@mail.it')->send(new AdminMail($contactMail));
+        try {
+            Mail::to('noreply@mail.it')->send(new AdminMail($contactMail));
+        } catch (Exception $e) {
+            return redirect()->back()->with('emailError', 'Si è verificato un errore! Per favore reinserisci i dati');
+        }
 
         return redirect()->back()->with('message', 'Dati inseriti con successo!');
     }

@@ -2,18 +2,23 @@
     
     <div class="container-fluid">
         <div class="row height-custom justify-content-center align-items-center">
-            <div class="col-12 bg-contact">
-                <h1 class="text-center display-4 title-custom title-height title">
-                    <span class="shadow-bg">Contattaci!</span>
+            <div class="col-12 col-md-6 bg-contact align-items-center justify-content-center d-flex">
+                <h1 class="text-center display-4 contact-title title-height title">
+                    <span class="shadow-bg font-custom">Contattaci!</span>
                 </h1>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
 
-                @if (session('message'))
+                @if (session()->has('message'))
                 <div class="alert alert-success">
                     {{ session('message') }}
+                </div>
+                @endif
+                @if (session()->has('emailError'))
+                <div class="alert alert-danger">
+                    {{ session('emailError') }}
                 </div>
                 @endif
                 
